@@ -17,6 +17,8 @@ class KellerLD(object):
 
 	def __init__(self, bus=1):
 		self._bus = None
+		self._pressure = None
+		self._temperature = None
 
 		try:
 			self._bus = smbus.SMBus(bus)
